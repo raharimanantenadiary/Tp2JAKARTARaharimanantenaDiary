@@ -3,10 +3,12 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.tp2raharimanantenadiary.jsf;
+
 import java.util.ArrayList;
 import java.util.List;
 import jakarta.inject.Named;
 import jakarta.enterprise.context.RequestScoped;
+
 /**
  *
  * @author Diary
@@ -32,5 +34,9 @@ public class Bean {
             l.add(i);
         }
         return l;
+    }
+
+    public String afficher() {
+        return "affichage_3?nb=" + nombre + "&amp;faces-redirect=true";
     }
 }
